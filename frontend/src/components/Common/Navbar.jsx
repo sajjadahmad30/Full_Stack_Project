@@ -36,6 +36,7 @@ const Navbar = () => {
       </div>
       {/* Right Section for the icons */}
       <div className="flex items-center space-x-4">
+        <Link to="/admin" className='block bg-black px-2 rounded text-sm text-white py-1'>Admin</Link>
         <Link to='/profile' className='hover:text-black'>
          <HiOutlineUser className='w-6 h-6 text-gray-700'/>
         </Link>
