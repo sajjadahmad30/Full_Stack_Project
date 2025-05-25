@@ -1,13 +1,7 @@
 const mongoose = require("mongoose");
 
-const checkoutItemSchema ,
-shippingAddress: {
-    address: {
-        type: String,
-        required: true,
-    }
-}= new mongoose.Schema({
-    prodcutId: {
+const checkoutItemSchema = new mongoose.Schema({
+ productId: {
         type: mongoose.Schema.Types.ObjectId,
         ref:"Product",
         required: true,
@@ -23,8 +17,13 @@ shippingAddress: {
     price:{
         type: Number,
         required: true,
-    }
+    },
+    quantity:{
+        type: Number,
+        required: true,
+    },
 }, {_id: false});
+   
 
 
 const checkoutSchema = new mongoose.Schema({
