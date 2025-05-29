@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 const API_URL = `${import.meta.env.VITE_BACKEND_URL}`
-const  USER_TOKEN= `Bearer ${localStorage.setItem("userToken")}`
+const USER_TOKEN = `Bearer ${localStorage.getItem("userToken")}`;
 
 
 //async thunk to fetch admin products
